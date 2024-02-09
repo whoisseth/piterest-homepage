@@ -115,10 +115,10 @@ export default function Home() {
                   <TbCloudDownload className="text-xl text-gray-600 " />
                 </button>
 
-                <Image
+                <img
                   className="h-full max-w-full rounded-lg"
-                  height={400}
-                  width={400}
+                  // height={400}
+                  // width={400}
                   src={innerData.urls.regular}
                   alt="img"
                 />
