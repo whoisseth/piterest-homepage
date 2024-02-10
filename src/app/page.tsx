@@ -51,7 +51,7 @@ export default function Home() {
   }
 
   return (
-    <div className="">
+    <div className=" ">
       {/* navbar */}
       <nav className="px-5 py-4 flex   items-center">
         <Link
@@ -75,7 +75,7 @@ export default function Home() {
               onChange={(e) => setSearch(e.target.value)}
               type="text"
               placeholder="Search"
-              className="w-full h-12 rounded-full pl-12 bg-gray-200 outline-blue-300  "
+              className="w-full h-12 rounded-full pl-12 bg-gray-200 outline-blue-300   dark:bg-slate-700 "
             />
           </div>
 
@@ -101,7 +101,7 @@ export default function Home() {
         </section>
       </nav>
 
-      <main className="grid w-full grid-cols-2 md:grid-cols-4 gap-4 px-3 md:8">
+      <main className="grid w-full grid-cols-2 md:grid-cols-4 gap-4 px-3 md:8 pb-8">
         {divideData(data?.results ?? []).map((d, i) => (
           <div key={i} className="grid gap-4">
             {d.map((innerData, innerIndex) => (
@@ -116,7 +116,7 @@ export default function Home() {
                 </button>
 
                 <img
-                  className="h-full max-w-full rounded-lg"
+                  className="h-full max-w-full rounded-3xl"
                   // height={400}
                   // width={400}
                   src={innerData.urls.regular}
