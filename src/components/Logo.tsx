@@ -12,14 +12,12 @@ export default function Logo({}: Props) {
   const imgSrc = logo;
 
   return (
-    <div>
-      <Image
-        height={400}
-        width={400}
-        src={imgSrc}
-        className="h-6 w-6"
-        alt="logo"
-      />
-    </div>
+    <Image
+      height={400}
+      width={400}
+      src={imgSrc}
+      className="h-6 w-6"
+      alt="logo"
+    />
   );
 }
